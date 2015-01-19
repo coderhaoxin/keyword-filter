@@ -2,11 +2,11 @@
   "name": "keyword-filter",
   "version": "0.4.0",
   "description": "keyword filter for node.js",
-  "main": "index.js",
+  "main": "lib/index.js",
   "scripts": {
-    "test": "node_modules/.bin/_mocha --harmony -R spec -t 20 test.js",
-    "test-cov": "node --harmony node_modules/.bin/istanbul cover node_modules/.bin/_mocha -- -R dot -t 20 test.js",
-    "test-travis": "node --harmony node_modules/.bin/istanbul cover node_modules/.bin/_mocha --report lcovonly -- -R dot -t 20 test.js"
+    "test": "mocha -R spec -t 20 test/*.js",
+    "test-cov": "istanbul cover node_modules/.bin/_mocha -- -R dot -t 20 test/*.js",
+    "test-travis": "istanbul cover node_modules/.bin/_mocha --report lcovonly -- -R dot -t 20 test/*.js"
   },
   "repository": {
     "type": "git",
@@ -23,9 +23,7 @@
     "url": "https://github.com/coderhaoxin/keyword-filter/issues"
   },
   "files": [
-    "index.js",
-    "keyword.js",
-    "Readme.md"
+    "lib"
   ],
   "directories": {
     "test": "test"
