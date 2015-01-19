@@ -20,16 +20,18 @@ npm install keyword-filter
 ### example
 
 ```js
-var keywordFilter = require('keyword-filter');
+var KeywordFilter = require('keyword-filter');
+var filter = new KeywordFilter();
+
 var keyArrays = ['go', 'js', 'lang', '我哈', '你呀'];
 
-keywordFilter.init(keyArrays);
+filter.init(keyArrays);
 
 var content = 'what is the best lang, go or js?你呀个妹，咿呀我哈噶';
 
-keywordFilter.hasKeyword(content);
-keywordFilter.replaceKeywords(content, '*');
-keywordFilter.replaceKeywords(content, 'happy');
+filter.hasKeyword(content);
+filter.replaceKeywords(content, '*');
+filter.replaceKeywords(content, 'happy');
 ```
 
 [npm-img]: https://img.shields.io/npm/v/keyword-filter.svg?style=flat-square
