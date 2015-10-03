@@ -4,7 +4,7 @@
 [![License][license-img]][license-url]
 [![Dependency status][david-img]][david-url]
 
-### a extreme lightweight keyword filter for node.js
+### an extreme lightweight keyword filter for node.js
 
 ### install
 
