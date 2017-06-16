@@ -16,6 +16,7 @@ npm install keyword-filter
 
 * hasKeyword
 * replaceKeywords
+* getOccurances
 
 ### example
 
@@ -27,11 +28,13 @@ var keyArrays = ['go', 'js', 'lang', '我哈', '你呀'];
 
 filter.init(keyArrays);
 
-var content = 'what is the best lang, go or js?你呀个妹，咿呀我哈噶';
+var content = 'what is the best lang, go or js?
+				你呀个妹，咿呀我哈噶';
 
 filter.hasKeyword(content);
 filter.replaceKeywords(content, '*');
 filter.replaceKeywords(content, 'happy');
+filter.getOccurances(content); // -> Returns [{1,'go'},{1,'js'},{1,'lang'}, {2, '我哈'}, {2, '你呀'}]
 ```
 
 [npm-img]: https://img.shields.io/npm/v/keyword-filter.svg?style=flat-square
