@@ -16,7 +16,7 @@ filter.init(keyArrays);
 describe('## keyword filter', function() {
   describe('# getOccurances', function() {
 	 it('should map line numers and discovered values', function() {
-		 let results = filter.getOccurances(content3);
+		 var results = filter.getOccurances(content3);
 		 equal(results[0].line, 1);
 		 equal(results[0].value, 'lang');
 		 equal(results[3].line, 2);
