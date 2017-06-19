@@ -8,10 +8,7 @@
     "test-cov": "istanbul cover node_modules/.bin/_mocha -- -R dot -t 20 test/*.js",
     "test-travis": "istanbul cover node_modules/.bin/_mocha --report lcovonly -- -R dot -t 20 test/*.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/coderhaoxin/keyword-filter.git"
-  },
+  "repository": "coderhaoxin/keyword-filter",
   "keywords": [
     "keyword",
     "replace",
@@ -19,19 +16,17 @@
   ],
   "author": "haoxin",
   "license": "MIT",
-  "bugs": {
-    "url": "https://github.com/coderhaoxin/keyword-filter/issues"
-  },
   "files": [
     "lib"
   ],
-  "directories": {
-    "test": "test"
-  },
   "devDependencies": {
-    "istanbul": "*",
-    "mocha": "*"
+    "eslint-config-ok": "github:haoxins/eslint-config",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.4.2"
   },
-  "homepage": "https://github.com/coderhaoxin/keyword-filter",
-  "dependencies": {}
+  "eslintConfig": {
+    "extends": [
+      "ok"
+    ]
+  }
 }
