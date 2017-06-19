@@ -29,7 +29,7 @@ const keyArrays = ['go', 'js', 'lang', '我哈', '你呀']
 filter.init(keyArrays)
 
 const content = 'what is the best lang, go or js?\n' +
-  + '你呀个妹，咿呀我哈噶'
+  '你呀个妹，咿呀我哈噶'
 
 filter.hasKeyword(content)
 filter.replaceKeywords(content, '*')
