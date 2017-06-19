@@ -4,6 +4,7 @@
   "description": "keyword filter for node.js",
   "main": "lib/index.js",
   "scripts": {
+    "lint": "eslint --fix .",
     "test": "mocha -R spec -t 20 test/*.js",
     "test-cov": "istanbul cover node_modules/.bin/_mocha -- -R dot -t 20 test/*.js",
     "test-travis": "istanbul cover node_modules/.bin/_mocha --report lcovonly -- -R dot -t 20 test/*.js"
